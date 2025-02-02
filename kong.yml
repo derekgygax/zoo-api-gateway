@@ -2,7 +2,7 @@ _format_version: "3.0"
 
 services:
   - name: zoo-animals-service
-    url: http://localhost:8000
+    url: http://localhost:8100
     routes:
       - name: animals-route
         paths:
@@ -10,7 +10,7 @@ services:
         strip_path: true
 
   - name: zoo-reports-service
-    url: http://localhost:8005
+    url: http://localhost:8105
     routes:
       - name: reports-route
         paths:
@@ -18,7 +18,7 @@ services:
         strip_path: true
 
   - name: zoo-staff-service
-    url: http://localhost:8002
+    url: http://localhost:8102
     routes:
       - name: staff-route
         paths:
@@ -26,7 +26,7 @@ services:
         strip_path: true
 
   - name: zoo-food-service
-    url: http://localhost:8001
+    url: http://localhost:8101
     routes:
       - name: food-route
         paths:
@@ -34,7 +34,7 @@ services:
         strip_path: true
 
   - name: zoo-breeding-service
-    url: http://localhost:8003
+    url: http://localhost:8103
     routes:
       - name: breeding-route
         paths:
@@ -42,7 +42,7 @@ services:
         strip_path: true
 
   - name: zoo-enclosures-service
-    url: http://localhost:8004
+    url: http://localhost:8104
     routes:
       - name: enclosures-route
         paths:
