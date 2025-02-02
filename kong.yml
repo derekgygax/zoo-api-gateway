@@ -2,49 +2,49 @@ _format_version: "3.0"
 
 services:
   - name: zoo-animals-service
-    url: http://localhost:8100
+    url: http://host.docker.internal:8100
     routes:
       - name: animals-route
         paths:
-          - /animals
+          - /animals-service
         strip_path: true
 
   - name: zoo-reports-service
-    url: http://localhost:8105
+    url: http://host.docker.internal:8105
     routes:
       - name: reports-route
         paths:
-          - /reports
+          - /reports-service
         strip_path: true
 
   - name: zoo-staff-service
-    url: http://localhost:8102
+    url: http://host.docker.internal:8102
     routes:
       - name: staff-route
         paths:
-          - /staff
+          - /staff-service
         strip_path: true
 
   - name: zoo-food-service
-    url: http://localhost:8101
+    url: http://host.docker.internal:8101
     routes:
       - name: food-route
         paths:
-          - /food
+          - /food-service
         strip_path: true
 
   - name: zoo-breeding-service
-    url: http://localhost:8103
+    url: http://host.docker.internal:8103
     routes:
       - name: breeding-route
         paths:
-          - /breeding
+          - /breeding-service
         strip_path: true
 
   - name: zoo-enclosures-service
-    url: http://localhost:8104
+    url: http://host.docker.internal:8104
     routes:
       - name: enclosures-route
         paths:
-          - /enclosures
+          - /enclosures-service
         strip_path: true
